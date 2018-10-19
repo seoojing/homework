@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>오류피하기</title>
+	<style>
+body{background-color: #D4D0C7;}
+		.polygon {
+  overflow: hidden;
+  width: 1300px;
+  height: 800px;
+  margin: 0 auto;
+  background: url('bac.jpg');
+  background-size: cover;
+  background-position: center center;
+  cursor: url('mm.png')
+      32
+      32,
+    pointer;
+  position: relative;
+}
+
+.bullet {
+  height: 140px;
+  width: 190px;
+  margin-right: 5px;
+  margin-top: 15px;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  background: url('err.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.bullett {
+  height: 190px;
+  width: 140px;
+  margin-right: 5px;
+  margin-top: 15px;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  background: url('titi.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.bull {
+  height: 70px;
+  width: 140px;
+  margin-right: 5px;
+  margin-top: 15px;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  background: url('mi.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.do {
+  height: 70px;
+  width: 140px;
+  margin-right: 5px;
+  margin-top: 15px;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  background: url('do.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.win {
+  height: 130px;
+  width: 200px;
+  margin-right: 5px;
+  margin-top: 15px;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  background: url('win.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.titi {
+  height: 120px;
+  width: 100px;
+  margin-right: 5px;
+  margin-top: 15px;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  background: url('bobo.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.sendi {
+  height: 60px;
+  width: 60px;
+  margin-right: 5px;
+  margin-top: 15px;
+  position: absolute;
+  top: -50%;
+  left: 0;
+  background: url('suc.gif');
+  background-size: cover;
+ background-position: center
+  background-repeat: no-repeat;
+  
+}
+
+
+
+.polygon .bullet:hover {
+  border-radius: 0;
+  margin: 0;
+  height: 800px;
+  width: 1300px;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  cursor: default;
+  text-align: center;
+ 
+  background: url(gg.gif); 
+
+
+  animation: anime1 0s !important;
+  animation: anime2 0s !important;
+  animation: anime3 0s !important;
+  animation: anime4 0s !important;
+  animation: anime5 0s !important;
+  animation: anime6 0s !important;
+  animation: anime7 0s !important;
+  animation: anime8 0s !important;
+   animation: anime9 0s !important;
+  animation: anime11 0s !important;
+}
+
+.polygon .bullet:hover:before {
+  content:"당신은 과제의 노예!";
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+
+  
+  
+}
+
+.polygon .bullett:hover {
+  border-radius: 0;
+  margin: 0;
+  height: 800px;
+  width: 1300px;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  cursor: default;
+  text-align: center;
+ 
+  background: url(gg.gif); 
+
+  animation: anime1 0s !important;
+  animation: anime2 0s !important;
+  animation: anime3 0s !important;
+  animation: anime4 0s !important;
+  animation: anime5 0s !important;
+  animation: anime6 0s !important;
+  animation: anime7 0s !important;
+  animation: anime8 0s !important;
+   animation: anime9 0s !important;
+  animation: anime11 0s !important;
+}
+
+.polygon .bullett:hover:before {
+  content:"당신은 과제의 노예!";
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  
+  
+}
+
+.polygon .bull:hover {
+  border-radius: 0;
+  margin: 0;
+  height: 800px;
+  width: 1300px;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  cursor: default;
+  text-align: center;
+ 
+  background: url(gg.gif); 
+
+  animation: anime1 0s !important;
+  animation: anime2 0s !important;
+  animation: anime3 0s !important;
+  animation: anime4 0s !important;
+  animation: anime5 0s !important;
+  animation: anime6 0s !important;
+  animation: anime7 0s !important;
+  animation: anime8 0s !important;
+   animation: anime9 0s !important;
+  animation: anime11 0s !important;
+}
+
+.polygon .bull:hover:before {
+  content:"당신은 과제의 노예!";
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  
+  
+}
+
+.polygon .win:hover {
+  border-radius: 0;
+  margin: 0;
+  height: 800px;
+  width: 1300px;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  cursor: default;
+  text-align: center;
+ 
+  background: url(gg.gif); 
+
+  animation: anime1 0s !important;
+  animation: anime2 0s !important;
+  animation: anime3 0s !important;
+  animation: anime4 0s !important;
+  animation: anime5 0s !important;
+  animation: anime6 0s !important;
+  animation: anime7 0s !important;
+  animation: anime8 0s !important;
+   animation: anime9 0s !important;
+  animation: anime11 0s !important;
+}
+
+.polygon .win:hover:before {
+  content:"당신은 과제의 노예!";
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  
+  
+}
+
+.polygon .do:hover {
+  border-radius: 0;
+  margin: 0;
+  height: 800px;
+  width: 1300px;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  cursor: default;
+  text-align: center;
+ 
+  background: url(gg.gif); 
+  animation: anime1 0s !important;
+  animation: anime2 0s !important;
+  animation: anime3 0s !important;
+  animation: anime4 0s !important;
+  animation: anime5 0s !important;
+  animation: anime6 0s !important;
+  animation: anime7 0s !important;
+  animation: anime8 0s !important;
+   animation: anime9 0s !important;
+  animation: anime11 0s !important;
+}
+
+.polygon .do:hover:before {
+  content:"당신은 과제의 노예!";
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  
+  
+}
+
+.polygon .titi:hover {
+  border-radius: 0;
+  margin: 0;
+  height: 800px;
+  width: 1300px;
+  z-index: 9;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  cursor: default;
+  text-align: center;
+ 
+  background: url(gg.gif); 
+
+  animation: anime1 0s !important;
+  animation: anime2 0s !important;
+  animation: anime3 0s !important;
+  animation: anime4 0s !important;
+  animation: anime5 0s !important;
+  animation: anime6 0s !important;
+  animation: anime7 0s !important;
+  animation: anime8 0s !important;
+   animation: anime9 0s !important;
+  animation: anime11 0s !important;
+}
+
+.polygon .titi:hover:before {
+  content:"당신은 과제의 노예!";
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  
+  
+}
+
+.polygon .sendi:hover {
+  border-radius: 0;
+  margin: 0;
+  height: 800px;
+  width: 1300px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+  cursor: default;
+  text-align: center;
+ 
+  background: url(yee.gif); 
+
+  animation: anime1 0s !important;
+  animation: anime2 0s !important;
+  animation: anime3 0s !important;
+  animation: anime4 0s !important;
+  animation: anime5 0s !important;
+  animation: anime6 0s !important;
+  animation: anime7 0s !important;
+  animation: anime8 0s !important;
+  animation: anime9 0s !important;
+  animation: anime11 0s !important;
+ 
+}
+
+.polygon .sendi:hover:before {
+  content:"해냈닭! 오늘밤은 치킨이닭!";
+  text-align: center;
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  
+  
+}
+
+.polygon:hover .bullet--1 {
+  animation: anime1 6s 0s linear infinite;
+}
+
+.polygon:hover .bullet--2 {
+  animation: anime2 4s 2s linear infinite;
+}
+
+.polygon:hover .bullet--3 {
+  animation: anime3 3s 0s linear infinite;
+}
+
+.polygon:hover .bullet--4 {
+  animation: anime4 6s 4s linear infinite;
+}
+
+.polygon:hover .bullet--5 {
+  animation: anime5 4s 5s linear infinite;
+}
+
+.polygon:hover .bullet--6 {
+  animation: anime2 3s 6s linear infinite;
+}
+
+.polygon:hover .bullet--7 {
+  animation: anime7 2s 8s linear infinite;
+}
+
+.polygon:hover .bullet--8 {
+  animation: anime4 5s 8s linear infinite;
+}
+
+.polygon:hover .bullet--9 {
+  animation: anime8 3s 9s linear infinite;
+}
+
+.polygon:hover .bullet--10 {
+  animation: anime6 2s 15s linear infinite;
+}
+
+.polygon:hover .bullet--11 {
+  animation: anime1 2s 5s linear infinite;
+}
+
+.polygon:hover .bullet--12 {
+  animation: anime4 6s 3s linear infinite;}
+
+  .polygon:hover .bullet--13 {
+  animation: anime9 1s 5s  linear infinite;
+}
+.polygon:hover .bullet--14 {
+  animation: anime8 3s 3s  linear infinite;}
+
+  .polygon:hover .bullet--15 {
+  animation: anime11 1s 4s  linear infinite;}
+
+  #meme{left: 50px; writing-mode: tb-rl; position: absolute; font-size: 3em;font-weight: 800; 
+  	-webkit-animation: glitch 0.5s infinite linear;  
+        animation: glitch 2s infinite linear; color:#FF7528;z-index: 2;}
+
+  #rere{top:425px; left: 30px; writing-mode: tb-rl; position: absolute; font-size: 1em;font-weight: 500; 
+  	-webkit-animation: glitch 0.5s infinite linear;  
+        animation: glitch 2s infinite linear; color:#F2A781; z-index: 2;}
+
+   #cou{top:100px; left: 1440px; writing-mode: tb-rl; position: absolute; font-size: 1em;font-weight: 500; 
+  	-webkit-animation: glitch 0.5s infinite linear;  
+        animation: glitch 2s infinite linear; color:#F2A781; z-index: 2;}
+
+
+  #hey{top:7px; left: 1420px;
+  	 position: absolute;z-index: 11;}
+  	   #hey img{
+  	 width: 70px; height: 70px; z-index: 11;}
+
+  #hii{top:-7px; left: 10px;
+  	 position: absolute;background-position: center center;}
+  	   #hii img{
+  	 width: 1500px; height: auto; z-index: 0;}
+
+
+
+@-webkit-keyframes glitch {
+  50% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);  
+  }
+}
+
+
+@-webkit-keyframes anime1 {
+  0% {
+    top: 260px;
+    left: 110%;
+  }
+
+  100% {
+    top: 260px;
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes anime2 {
+  0% {
+    top: 300px;
+    left: 110%;
+  }
+
+  100% {
+    top: 300px;
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes anime3 {
+  0% {
+    top: 150px;
+    left: 110%;
+  }
+
+  100% {
+    top: 200px;
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes anime4 {
+  0% {
+    top: 300px;
+    left: 110%;
+  }
+
+  100% {
+    top: 200px;
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes anime5 {
+  0% {
+    top: 70px;
+    left: 110%;
+  }
+
+  100% {
+    top: 70px;
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes anime6 {
+  0% {
+    top: 500px;
+    left: 110%;
+  }
+
+  100% {
+    top: 450px;
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes anime7 {
+  0% {
+    top: 600px;
+    left: 110%;
+  }
+
+  100% {
+    top: 500px;
+    right: 110%;
+  }
+}
+
+@-webkit-keyframes anime8 {
+  0% {
+    top: 700px;
+    left: 110%;
+  }
+
+  100% {
+    top: 600px;
+    right: 110%;
+  }
+
+  @-webkit-keyframes anime9 {
+  0% {
+    top: 10px;
+    left: 110%;
+  }
+
+  100% {
+    top: 5px;
+    right: 110%;
+  }
+}
+
+ @-webkit-keyframes anime11 {
+  0% {
+    top: 35px;
+    left: 110%;
+  }
+
+  100% {
+    top: 35px;
+    right: 110%;
+  }
+}
+
+
+
+	</style>
+
+</head>
+
+  <body>
+  	<audio src="err.mp3"autoplay="true" preload="auto" loop="true"  ></audio>
+
+   <div id="meme">오류를 피해 과제를 해내세요!</div>
+   <div id="rere">다시하려면 화면을 막 클릭하세요!</div>
+   <div id="cou">화면 밖으로 커서가 나가지 않도록 주의하세요!</div>
+   <div id="hey">
+   	<img src="suc.gif">
+   </div>
+
+   <div id="hii">
+   	<center>
+   	<img src="bb.png">
+   	</center>
+   </div>
+
+   <div class="polygon">
+
+  <span class="bullett bullet--1"></span>
+  <span class="bull bullet--2"></span>
+  <span class="bullet bullet--3"></span>
+  <span class="do bullet--4"></span>
+  <span class="bullet bullet--5"></span>
+  <span class="bullett bullet--6"></span>
+  <span class="bullet bullet--7"></span>
+  <span class="win bullet--8"></span>
+  <span class="win bullet--9"></span>
+  <span class="sendi bullet--10"></span>
+  <span class="titi bullet--11"></span>
+  <span class="bullet bullet--12"></span>
+  <span class="bullet bullet--13"></span>
+  <span class="bullett bullet--14"></span>
+  <span class="sendi bullet--15"></span>
+</div>
+  </body>
+</html>
+
+
+</body>
+</html>
